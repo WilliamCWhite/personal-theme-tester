@@ -1,0 +1,129 @@
+:root {
+    font-family: 'Cascadia Mono', monospace;
+    font-family: 'Atkinson Hyperlegible';
+    font-size: 20px;
+    --bg1: #132237;
+    --bg2: #0e1a29;
+    --bg3: #51cc51;
+    --bg4: #000000;
+    --white: #B8D8D8;
+    --black: #132237;
+    --red: #FF4C4C;
+    --yellow: #ebb723;
+    --green: #51CC51;
+    --cyan: #1cbaac;
+    --blue: #3081F2;
+    --magenta: #CC66CC;
+    --lwhite: #ffffff;
+    --lblack: #1E7099;
+    --lred: #FF4C4C;
+    --lgreen: #51CC51;
+    --lyellow: #ebb723;
+    --lcyan: #1cbaac;
+    --lblue: #3081F2;
+    --lmagenta: #CC66CC;
+}
+* {
+    margin: 0;
+}
+body {
+    width: 100%;
+}
+.everything-container {
+    display: flex;
+    flex-direction: column;
+}
+.everything-container>div {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(8, auto);
+    grid-auto-flow: column;
+    grid-row-gap: 0.5rem;
+    grid-column-gap: 2rem;
+    padding: 1rem;
+    justify-items: center;
+    align-items: center;
+}
+@media (max-aspect-ratio: 1/1) {
+    .everything-container>div {
+        grid-template-columns: auto;
+        grid-template-rows: repeat(16, auto);
+    }
+}
+.background-section-1 {
+    background-color: var(--bg1);
+}
+.background-section-2 {
+    background-color: var(--bg2);
+}
+.background-section-3 {
+    background-color: var(--bg3);
+}
+.background-section-4 {
+    background-color: var(--bg4);
+}
+.text-1 {
+    color: var(--white);
+}
+.text-2 {
+    color: var(--black);
+}
+.text-3 {
+    color: var(--red);
+}
+.text-4 {
+    color: var(--yellow);
+}
+.text-5 {
+    color: var(--green);
+}
+.text-6 {
+    color: var(--cyan);
+}
+.text-7 {
+    color: var(--blue);
+}
+.text-8 {
+    color: var(--magenta);
+}
+.text-9 {
+    color: var(--lwhite);
+}
+.text-10 {
+    color: var(--lblack);
+}
+.text-11 {
+    color: var(--lred);
+}
+.text-12 {
+    color: var(--lyellow);
+}
+.text-13 {
+    color: var(--lgreen);
+}
+.text-14 {
+    color: var(--lcyan);
+}
+.text-15 {
+    color: var(--lblue);
+}
+.text-16 {
+    color: var(--lmagenta);
+}
+
+div.background-tester {
+    background-color: var(--bg1);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+.background-tester>div {
+    padding: 1rem;
+    background-color: var(--bg2);
+    color: var(--white);
+    border-radius: 1rem;
+    border: 1px solid var(--cyan);
+}
+
